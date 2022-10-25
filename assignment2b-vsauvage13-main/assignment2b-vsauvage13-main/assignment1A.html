@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/743e966472.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- linking External CSS page - must be in head of document -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Neucha&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Connecting Google Fonts to HTML -->
+    <title>Assignment 1a for DGL 203 - Advanced CSS</title>
+  </head>
+  <body class="assignment1a">
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <div class="assignment1a">
+        <header>
+          <!-- NEW NAV BAR -->
+
+            <a class="hamburger" href="#navbar" aria-label="Open main menu.">
+              <span class="sr-only">Open main menu </span>
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </a>
+            <nav id="navbar">
+              <div class="logofloat">
+                <a href="./assignment1A.html">VES</a>
+              </div>
+              <ul>
+                <li><a href="./index.html">Motion Samples</a></li>
+                <li><a href="./assignment2C.html">Animation</a></li>
+              </ul>
+              <a class="close" href="#" aria-label="Close main menu.">
+                <span class="sr-only">Close main menu </span>
+                <i class="fa-solid fa-x" aria-hidden="true"></i>
+              </a>
+            </nav>
+ 
+
+          <!-- OLD NAV BAR
+          <div>
+          <nav>
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#work-section">Work Experience</a></li>
+              <li><a href="#education-section">Education</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div> -->
+          <div class="content-wrapper assignment1a">
+            <h1>Vienna May Sauvage</h1>
+            <h2>Student at North Island College</h2>
+
+            <p>
+              I have always loved art even as a young child. I remember
+              collecting supplies and experimenting at home, taking as many art
+              classes as I could, and even spending time in the art rooms when I
+              wasn't in a formal class. I bounced between art styles, projects,
+              and types, for years, never really finding the one thing that I
+              really liked and passing it off as a hobby I only dabbled in while
+              I worked low level jobs.
+            </p>
+            <p>
+              I went to BCIT and got a Marketing Degree. I realized that it
+              wasn't for me when my favourite class was Ad Design and I loathed
+              all the others. That led me to NIC and their Design and
+              Development prorgram. I have loved every moment of it. Being able
+              to balance logic and creativity has been so fulfilling.
+            </p>
+          </div>
+        </header>
+      </div>
+
+      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="featured-projects assignment1a">
+        <div id="projects" class="content-wrapper divider">
+          <h2>Featured Projects</h2>
+
+          <p>
+            View my selected projects below. Stay tuned for the upcoming drop of
+            my new and updated website, coming soon!
+          </p>
+
+          <!-- Copy the whole <section> block to add more projects. -->
+          <section class="project-item">
+            <img
+              src="assignment-1a/placeholderimages/elfinlau.png"
+              alt="Screenshot showing a resorts websites homepage. The colour palette is dark grey and cream and there is a beautiful background photo of a resort on a lake side with the mountains in the background"
+            />
+            <h3>Elfinlau</h3>
+            <p>
+              After coming across this absolutely ridiculous website in one of
+              my marketing classes at BCIT, when I got tasked with re-designing
+              a website for DGL 103, I knew exactly which one to tackle. After
+              finding some inspiration from other luxury resorts, I took a crack
+              at it. Not so bad for having very limited HTML and CSS knowledge!
+              While not perfect, I still think my design proves to be a little
+              more appealing than the original.
+            </p>
+            <div class="container">
+              <a class="btn" href="#open-modal">Learn More</a>
+            </div>
+            <div id="open-modal" class="modal-window">
+              <div>
+                <a href="#" title="Close" class="modal-close">Close</a>
+                <div class="modal-buttons">
+                  <a href="https://www.elfinlau.com/" target="_blank"
+                    >Elfinlau Website</a
+                  >
+                  <a
+                    href="https://nic-dgl103-f21-cvs.github.io/websiteproject-vsauvage13/"
+                    target="_blank"
+                    >My Re-Design</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="project-item">
+            <img
+              src="assignment-1a/placeholderimages/Connected.jpg"
+              alt="Charcoal drawing of a girl with wild hair and a long haired, handsome cat around her shoulders. The background is a galaxy sky full of planets and the cat is part skeleton at his foot and tail."
+            />
+            <h3>Connected</h3>
+            <p>
+              Sebastian is quite important to me. Unfortunately, he no longer
+              blesses this world with his presence, but the time we spent
+              together was so valuable to me. Drawing him is one of the many
+              ways I get to honour his existence and work through my grief.
+              Drawing this in charcoal was well out of my comfort zone, but I
+              had so much fun doing it.
+            </p>
+            <a
+              href="Assignment-1A/placeholderimages/Connected.jpg"
+              target="_blank"
+            >
+              View Larger</a
+            >
+          </section>
+          <section class="project-item">
+            <img
+              src="assignment-1a/placeholderimages/SauvageInvasiveSpecies_Page_1.jpg"
+              alt="continuous line drawing of two hands, one on top and one on bottom, curled towards each other with a single thin line connecting them"
+            />
+            <h3>Can You Tell the Difference?</h3>
+
+            <p>
+              I took DGL 102 last semester and my Term Project was to create a
+              poster for a social justice cause in the style of a famous digital
+              artist. The cause I chose was invasive species and their impact on
+              native ecosystems. This was partially becuase of my volunteering
+              with the amazing ISCBC or Invasive Species Council of BC. You can
+              learn more about all the amazing things they are doing
+              <a
+                style="
+                  background-color: #fcf8ed;
+                  color: #2a9d8f;
+                  text-decoration: underline;
+                  padding: 0%;
+                "
+                href="https://bcinvasives.ca/"
+                target="_blank"
+              >
+                <b> here.</b></a
+              >
+              The digital artist that I chose was Christopher Dina who is an
+              American digital artist that lives and works in Japan. You can
+              find out more about him by visiting his website
+              <a
+                style="
+                  background-color: #fcf8ed;
+                  color: #2a9d8f;
+                  text-decoration: underline;
+                  padding: 0%;
+                "
+                href="https://www.christopherdina.com/"
+                target="_blank"
+              >
+                <b> here.</b></a
+              >
+            </p>
+
+            <a
+              href="assignment-1a/placeholderimages/SauvageInvasiveSpecies_Page_1.jpg"
+              target="_blank"
+            >
+              View Larger</a
+            >
+          </section>
+          <section class="project-item">
+            <img
+              src="assignment-1a/placeholderimages/Energy.jpg"
+              alt="continuous line drawing of two hands, one on top and one on bottom, curled towards each other with a single thin line connecting them"
+            />
+            <h3>Energy</h3>
+            <p>
+              I took FIN 110 last semester and loved it. One of my favourite
+              projects was continuous line drawing. I really took to this style
+              as it let me explore art in a way that I hadn't before and I
+              didn't get hung up on mistakes. Energy is a continuous line
+              drawing of two hands, one on top and one on the bottom, curled
+              towards each other with a single thin line connecting them. I
+              truly believe that energy is something you can see and feel,
+              especially when you put intent into it.
+            </p>
+            <a
+              href="assignment-1a/placeholderimages/Energy.jpg"
+              target="_blank"
+            >
+              View Larger</a
+            >
+          </section>
+          <!-- End of Project block. -->
+        </div>
+      </section>
+
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="work-experience assignment1a">
+        <div id="work-section" class="content-wrapper item-details">
+          <h2>Work Experience</h2>
+          <p>
+            A detailed look at what I have done with design work over the past
+            couple years.
+          </p>
+
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <section class="job-section">
+            <div class="job-details">
+              <h3>Social Media Manager</h3>
+              <p>Art Knapp Courtenay</p>
+              <p>March 24, 2021 - August 24, 2022</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Reframed Social Media processes according to best practices.
+                Creator and organizer of content and communicated with Managers
+                about schedules and promotions.
+              </p>
+
+              <ul>
+                <li>
+                  Created new best practices to follow for Social Media
+                  Guidelines as their wasn't any in place when I arrived
+                </li>
+                <li>Lead the Social Media Department</li>
+                <li>
+                  Responsible for creating, scheduling and posting content as
+                  well as being the voice of connection for the Art Knapp
+                  Community
+                </li>
+              </ul>
+            </div>
+            <div class="job-details">
+              <h3>Social Media Content Organizer</h3>
+              <p>The Cat Advocate Teaching and Saving Society</p>
+              <p>March 2021 - Dec 2021</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                A volunteer positions where I came in to take photographs and
+                videos of desired content and scheduled it in order to
+                streamline their media posting process and increase engagement
+                on Social Media platforms.
+              </p>
+
+              <ul>
+                <li>
+                  Created new best practices to follow for Social Media
+                  Guidelines as their wasn't any in place when I arrived
+                </li>
+                <li>
+                  Organized and scheduled content that I was given to post as
+                  well as content I created.
+                </li>
+                <li>
+                  Responsible for organizing content by pre-decided on themes
+                  and engagement.
+                </li>
+              </ul>
+            </div>
+            <div class="job-details">
+              <h3>Social Media Member</h3>
+              <p>Gardenworks Courtenay</p>
+              <p>August 24, 2022 - Current</p>
+            </div>
+            <div class="job-summary">
+              <p>
+                Old Art Knapp owners retired and the business was sold to
+                Gardenworks. Role transitioned from one business to the next,
+                although slightly different.
+              </p>
+
+              <ul>
+                <li>
+                  Communicated with Managers about the business change-over
+                </li>
+                <li>
+                  Updated the public, through Social Media, the changes,
+                  updates, and renovations
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- End of Job block. -->
+        </div>
+      </section>
+
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="education assignment1a">
+        <div id="education-section" class="content-wrapper item-details">
+          <h2>Education</h2>
+
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Mark R. Isfeld Secondary - Comox Valley</h3>
+            <p>Graduated 2014</p>
+            <p>
+              Excelling in academics and creative pursuits, all throughout
+              Highschool I received Silver Honour Roll as well as awards in
+              English 11 and Creative Art 12.
+            </p>
+          </section>
+          <section>
+            <h3>BC Institute of Technology - Online</h3>
+            <p>
+              Social Media Marketing Certificate - 1 year <br />
+              Fall of 2020 - Spring of 2021
+            </p>
+            <p>
+              Classes focused on successful Marketing in a digital space as well
+              as Ad Design, Social Media for Business, and Content Planning. I
+              was awarded a 4.0 GPA during that program even though I was not as
+              passionate about it as I am Design.
+            </p>
+          </section>
+          <section>
+            <h3>North Island College - Comox Valley Campus</h3>
+            <p>
+              Advanced Digital Development & Design Diploma - 3 years <br />
+              Fall of 2021 - Current
+            </p>
+
+            <p>
+              I am currently in my 3rd Semester of my degree. I am doing it part
+              time while I work, so I expect it to take me 4 years instead of 3
+              but I am ok with a better work, school, and life balance even if
+              it means one extra year of school. In my first year I was awarded
+              the $500 DIGITAL Design + Development Women in Technology Bursary
+              and the $590 Bob Minkler Memorial Bursary. This year I was awarded
+              the $1,200 Gene Regier Memorial Scholarship. I am so grateful for
+              the Bursaries and Scholarships I have received so far. I am
+              currently sitting at a 4.2 GPA and feel incredibly passioate about
+              what I have done so far!
+            </p>
+          </section>
+          <!-- End of School block. -->
+        </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <div class="assignment1a">
+        <footer>
+          <div id="contact" class="content-wrapper">
+            <h2>Let's Keep in Touch!</h2>
+
+            <!-- Social media and contact links. Add or remove any networks. -->
+
+            <ul class="content-list">
+              <li>
+                <a href="mailto:email@example.com"
+                  >settingsuncreative@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/fleur.sauvage13/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

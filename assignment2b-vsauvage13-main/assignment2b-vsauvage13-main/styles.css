@@ -1,0 +1,682 @@
+/* Colour Palette
+#FCF8ED - Ivory Almost White
+#E9C46A - Pastel Mustard Yellow
+#2A9D8F - Bright Teal
+#264653 - Dark Blue
+#13242A - Grey Almost Black
+*/
+/* Global Styles
+-------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #264653;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+body#ass2b {
+  background-color: #264653;
+  color: #e0fbfc;
+}
+body#ass2c {
+  background-color: #264653;
+  color: #e0fbfc;
+}
+/* ASSIGNMENT 1A STARTS
+---------------------------------*/
+
+.assignment1a h1 {
+  font-size: 3.5em;
+}
+.assignment1a h2 {
+  margin: 0;
+  font-size: 2.25em;
+  line-height: 1;
+}
+.assignment1a h1,
+.assignment1a h2 {
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.assignment1a h3 {
+  margin-bottom: 0;
+}
+.assignment1a img {
+  width: 18.75em;
+}
+.assignment1a a {
+  color: #e9c46a;
+}
+.assignment1a a:hover {
+  text-decoration: none;
+}
+.content-wrapper {
+  max-width: 700px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0 60px;
+}
+/* Layout changed in global settings to better portray understanding of code hierarchy.*/
+.item-details h3 + p {
+  font-style: italic;
+}
+/* h3 + p - this is a sibling combinator that targets only the p right after the h3 throughout the entire html document */
+.item-details h3 ~ p {
+  margin: 0;
+}
+/* h3 ~ p - this is a general sibling combinator that targets all of the p's that follow after the h3 */
+.assignment1a .divider > section {
+  border-bottom: 1px dashed #13242a;
+  padding: 25px 0;
+}
+.assignment1a .divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/* https://www.computerhope.com/issues/ch000049.htm#bottom This is the link I used to find how to create a Nav bar for in-page links!
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_right This is the link I used to style my nav bar */
+/* Navigation
+-------------------------------------- */
+/* NEW NAV BAR */
+.hamburger,
+.close {
+  font-size: 25px;
+  float: right;
+  padding-right: 30px;
+  color: #E9C46A;
+}
+nav {
+  overflow: hidden;
+  background-color: #193038;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 17px;
+  z-index: 1000;
+  /* display is positioning the hamburger menu */
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform 0.2 ease;
+}
+nav:target {
+  transform: translateY(0);
+}
+nav ul {
+  /* nav ul is the flex container that is holding all the flex items aka the li or a */
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-height: 50vh;
+  flex-flow: wrap;
+  flex-flow: column wrap-reverse;
+}
+/* targets the flex items which are the list items */
+nav a {
+  padding: 1rem 15px;
+  display: block;
+  height: 60px;
+  text-decoration: none;
+  color: #e9c46a;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+/* moves name over to left hand side */
+.logofloat {
+  float: left;
+  max-width: 120px;
+  max-height: 60px;
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+}
+.logofloat a {
+  padding-top: 12px;
+}
+.close:hover {
+  color: #fcf8ed;
+}
+/* OLD NAV BAR
+nav {
+  overflow: hidden;
+  background-color: rgba(19, 36, 42, 90%);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0%;
+}
+nav ul li {
+  list-style-type: none;
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav ul li a {
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+} */
+/* Hover states added for li and li a because both desired attributes of a different background colour spanning the desired area and text colour could not be achieved with only one hover state */
+/* NEW HOVER STATES */
+nav ul li:hover {
+  background-color: #e9c46a;
+}
+.logofloat:hover {
+  background-color: #e9c46a;
+}
+nav ul li a:hover {
+  color: #264653;
+}
+.logofloat a:hover {
+  color: #264653;
+}
+nav ul li:active {
+  background-color: #2a9d8f;
+  color: #fcf8ed;
+}
+nav ul li a:active {
+  color: #fcf8ed;
+}
+
+/* OLD HOVER STATES
+nav ul li:hover {
+  background-color: #e9c46a;
+  color: #264653;
+}
+nav ul li a:hover {
+  color: #264653;
+}
+nav ul li:active {
+  background-color: #2a9d8f;
+  color: #fcf8ed;
+}
+nav ul li a:active {
+  color: #fcf8ed;
+} */
+
+/* Profile
+-------------------------------------- */
+.assignment1a header {
+  background-color: #264653;
+  color: #fcf8ed;
+  background-image: url(Assignment-1A/placeholderimages/josefin-HtCgLIDy-2U-unsplash-edit.png);
+  background-size: cover;
+}
+
+/* Projects
+-------------------------------------- */
+.featured-projects {
+  background-color: #fcf8ed;
+}
+.featured-projects a {
+  background-color: #264653;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  display: inline-block;
+}
+.featured-projects a:hover {
+  background-color: rgba(38, 70, 83, 90%);
+}
+.project-item {
+  overflow: hidden;
+  max-width: 700px;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+.featured-projects p {
+  max-width: 700px;
+}
+/* COPIED MODAL CODE START 
+https://codepen.io/timothylong/pen/AJxrPR
+-------------------------------------- */
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 15vw;
+  height: 25vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #264653;
+}
+.modal-window a {
+  background-color: #e9c46a;
+}
+.modal-close {
+  color: #13242a;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: #e9c46a;
+}
+.container a {
+  color: #e9c46a;
+  text-decoration: none;
+}
+.modal-window > div {
+  border-radius: 1rem;
+}
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.btn {
+  background-color: #264653;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  display: inline-block;
+  color: #e9c46a;
+}
+.btn i {
+  padding-right: 0.3em;
+}
+
+.modal-buttons a {
+  color: #13242a;
+  margin-bottom: 10px;
+}
+.modal-buttons a:hover {
+  color: #e9c46a;
+  margin-bottom: 10px;
+}
+/* COPIED MODAL CODE END
+-------------------------------------- */
+/* Work Experience
+-------------------------------------- */
+.work-experience {
+  background-color: #2a9d8f;
+}
+/* Education
+-------------------------------------- */
+.education {
+  background-image: url(placeholderimages/scott-webb-hDyO6rr3kqk-unsplash.png);
+  background-size: cover;
+  background-position: center right;
+  padding-bottom: 100px;
+}
+.education p {
+  width: 60%;
+}
+/* Contact Info
+-------------------------------------- */
+.assignment1a footer {
+  background-color: #13242a;
+  color: #fcf8ed;
+}
+.content-list {
+  list-style-type: none;
+  padding: 0;
+}
+.content-list a {
+  display: inline-block;
+  padding: 15px;
+}
+/* ASSIGNMENT 1A ENDS
+--------------------------------- */
+/* ASSIGNMENT 2B STARTS
+--------------------------------- */
+.ass2bbackground {
+  background-color: #293241;
+  color: #e0fbfc;
+}
+.assignment2b .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+  justify-items: center;
+  border-top: solid 2px #98c1d9;
+  padding-top: 50px;
+}
+.assignment2b p {
+  padding-bottom: 20px;
+}
+.assignment2b .box {
+  min-height: 150px;
+  max-height: 400px;
+}
+.assignment2b h1,
+.assignment2b h2 {
+  text-align: center;
+  font-size: 80px;
+}
+.assignment2b h1 {
+  padding-top: 50px;
+}
+.assignment2b .header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.assignment2b .header p {
+  text-align: center;
+  font-size: 20px;
+  max-width: 900px;
+}
+/* BUTTON index
+----------------------------------------------------------------- */
+.assignment2b .button {
+  border: none;
+  padding: 15px 32px;
+  background-color: #e9c46a;
+  max-width: 300px;
+  color: #264653;
+  text-decoration: none;
+  margin: 15px 32px;
+  display: inline-block;
+  transition: background 0.3s ease-in, transform 0.5s ease,
+    color 0.7s ease-in-out;
+}
+.assignment2b .button:hover {
+  background: #264653;
+  border-style: solid;
+  border-color: #e9c46a;
+  color: #e9c46a;
+  transform: scale(0.9);
+}
+/* MOVING WORD index
+----------------------------------------------------------------- */
+.moving-word {
+  animation-name: scaleIn;
+  animation-duration: 2s;
+  font-family: "Modak", cursive;
+  font-size: 50px;
+  padding: 0%;
+  margin: 10px 0;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+@keyframes scaleIn {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* TYPING WORD index https://css-tricks.com/snippets/css/typewriter-effect/ - got help for the code from here
+----------------------------------------------------------------- */
+.typing {
+  display: inline-flex;
+  padding-top: 35px;
+}
+.typing p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.5px #ee6c4d solid; /* The typwriter cursor - have to definie border style in order to show */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  padding-bottom: 0%; /* Took away padding on bottom */
+  animation: typing 3s steps(25), blinking 0.5s steps(1) infinite; /* For both animations - the typing and the cursor */
+  max-height: 20px; /* Defined the height of the cursor otherwise it spanned the whole height of the grid box */
+}
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #98c1d9;
+  }
+}
+/* CLOUDS index
+----------------------------------------------------------------- */
+.cloud1 {
+  animation: float 5s linear infinite backwards;
+}
+.cloud2 {
+  animation: float 25s linear infinite backwards;
+}
+@keyframes float {
+  0% {
+    transform: translatex(-850px);
+  }
+  100% {
+    transform: translatex(800px);
+  }
+}
+
+/* ASSIGNMENT 2B ENDS
+--------------------------------- */
+/* ASSIGNMENT 2C STARTS
+--------------------------------- */
+:root {
+  --scale: 0.5;
+  --dist: 2%;
+  --deg: 10deg;
+}
+h2 {
+  --scale: 1.2;
+  --dist: 1%;
+  --deg: 7deg;
+}
+
+.animationheading h1,
+.animationheading h2 {
+  margin: 25px 0 0;
+  animation: slidein 4s linear infinite;
+  max-width: 70%;
+}
+@keyframes slidein {
+  0%,
+  75% {
+    transform: translateX(0%) scale(1.2) rotate(0deg);
+  }
+  40%,
+  100% {
+    transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
+  }
+}
+/* HALLOWEEN ANIMATIONS FROM UNDRAW
+----------------------------------------------------------------- */
+/* OLD ANIMATION FOR 2ND PUMPKIN WHERE IT FLOATED TO THE LEFT AND THEN BACKDOWN TO THE RIGHT - CANT FIGURE OUT Y AXIS
+#Pumpkin_2_R {
+  animation: straight-up 7s linear infinite;
+} */
+#Pumpkin_2_R {
+  offset-path: path
+    (
+      "M192.632,868.421S756.446,138.947,412.105,138.947,639.474,868.421,639.474,868.421"
+    );
+  animation: hovering 8s cubic-bezier(0.22, 0, 0.76, 1) both;
+  offset-rotate: auto;
+}
+/* 2ND PUMPKIN WONT MOVE*/
+#Pumpkin_1_L {
+  animation: floating 5s linear infinite;
+}
+
+@keyframes hovering {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(600px);
+  }
+  40% {
+    transform: translateY(150px);
+  }
+  75% {
+    transform: translateY(225px);
+  }
+  100% {
+    transform: translateY(600px);
+  }
+}
+/* GHOST animation
+----------------------------------------------------------------- */
+.ghost {
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.ghost img {
+  width: 90%;
+}
+/* ASSIGNMENT 2C ENDS
+--------------------------------- */
+/* ALL MEDIA QUERIES
+------------------------------------- */
+@media screen and (min-width: 750px) {
+  nav {
+    overflow: hidden;
+    background-color: rgba(19, 36, 42);
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    z-index: 1;
+    justify-content: flex-end;
+    text-align: center;
+    transform: translateY(0);
+  }
+  .hamburger, .close {
+    display: none;
+  }
+nav ul {
+  flex-flow: wrap;
+  justify-content: flex-end;
+  height: 50vh;
+  max-height: 60px;
+
+}
+.logofloat {
+margin-right: 35%;
+}
+.logofloat a {
+  padding-top: 12px;
+}
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .assignment1a header,
+  .assignment1a footer {
+    text-align: center;
+  }
+  .content-list {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-window > div {
+    width: 75vw;
+    max-width: 450px;
+    max-height: 200px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .single-column {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .modal-window > div {
+    width: 75vw;
+    max-width: 400px;
+    max-height: 200px;
+  }
+  .assignment1a h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .assignment1a h2 {
+    font-size: 1.75em;
+  }
+  .content-list a {
+    padding: 5px;
+  }
+  .featured-projects p {
+    max-width: 400px;
+  }
+  .education {
+    background-color: #e7e8e3;
+    padding-bottom: 25px;
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .education {
+    background-color: #e7e8e3;
+    padding-bottom: 25px;
+    background-image: none;
+  }
+  .modal-window > div {
+    width: 75vw;
+    max-width: 800px;
+    min-width: 250px;
+    min-height: 150px;
+  }
+}
