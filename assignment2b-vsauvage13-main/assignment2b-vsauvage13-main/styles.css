@@ -1,11 +1,41 @@
-/* Colour Palette
+/* COLOUR PALETTE
 #FCF8ED - Ivory Almost White
 #E9C46A - Pastel Mustard Yellow
 #2A9D8F - Bright Teal
 #264653 - Dark Blue
 #13242A - Grey Almost Black
 */
-/* Global Styles
+/* TABLE OF CONTENTS 
+-------------------------------------- 
+00 -- GLOBAL STYLES
+1a -- ASSIGNMENT 1A STARTS
+1b -- Navigation
+1c -- NEW NAV BAR
+1d -- OLD NAV BAR (COMMENTED OUT)
+1e -- NEW HOVER STATES 
+1f -- OLD HOVER STATES (COMMENTED OUT)
+1g -- PROFILE
+1h -- PROJECTS
+1i -- COPIED MODAL CODE START
+1j -- COPIED MODAL CODE END
+1k -- WORK EXPERIENCE 
+1l -- EDUCATION
+1m -- CONTACT INFO
+1n -- ASSIGNMENT 1A ENDS
+2b -- ASSIGNMENT 2B STARTS
+2bc -- BUTTON INDEX
+2bd -- MOVING WORD INDEX
+2be -- TYPING WORD INDEX
+2bf -- CLOUDS INDEX
+2bg -- ASSIGNMENT 2B ENDS
+2c -- ASSIGNMENT 2C STARTS
+2cd -- HALLOWEEN ANIMATIONS FROM UNDRAW
+2ce -- GHOST ANIMATION
+2cf -- ASSIGNMENT 2C ENDS
+33 -- ALL MEDIA QUERIES
+*/
+
+/* 00 -- GLOBAL STYLES
 -------------------------------------- */
 html {
   box-sizing: border-box;
@@ -27,7 +57,7 @@ body#ass2c {
   background-color: #264653;
   color: #e0fbfc;
 }
-/* ASSIGNMENT 1A STARTS
+/* 1a -- ASSIGNMENT 1A STARTS
 ---------------------------------*/
 
 .assignment1a h1 {
@@ -81,9 +111,9 @@ body#ass2c {
 
 /* https://www.computerhope.com/issues/ch000049.htm#bottom This is the link I used to find how to create a Nav bar for in-page links!
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_right This is the link I used to style my nav bar */
-/* Navigation
+/* 1b --  NAVIGATION
 -------------------------------------- */
-/* NEW NAV BAR */
+/* 1c -- NEW NAV BAR */
 .hamburger,
 .close {
   font-size: 25px;
@@ -146,7 +176,7 @@ nav a {
 .close:hover {
   color: #fcf8ed;
 }
-/* OLD NAV BAR
+/* 1d -- OLD NAV BAR
 nav {
   overflow: hidden;
   background-color: rgba(19, 36, 42, 90%);
@@ -171,7 +201,7 @@ nav ul li a {
   text-align: center;
 } */
 /* Hover states added for li and li a because both desired attributes of a different background colour spanning the desired area and text colour could not be achieved with only one hover state */
-/* NEW HOVER STATES */
+/* 1e -- NEW HOVER STATES */
 nav ul li:hover {
   background-color: #e9c46a;
 }
@@ -192,7 +222,7 @@ nav ul li a:active {
   color: #fcf8ed;
 }
 
-/* OLD HOVER STATES
+/* 1f -- OLD HOVER STATES
 nav ul li:hover {
   background-color: #e9c46a;
   color: #264653;
@@ -208,7 +238,7 @@ nav ul li a:active {
   color: #fcf8ed;
 } */
 
-/* Profile
+/* 1g -- PROFILE
 -------------------------------------- */
 .assignment1a header {
   background-color: #264653;
@@ -217,7 +247,7 @@ nav ul li a:active {
   background-size: cover;
 }
 
-/* Projects
+/* 1h -- PROJECTS
 -------------------------------------- */
 .featured-projects {
   background-color: #fcf8ed;
@@ -242,7 +272,7 @@ nav ul li a:active {
 .featured-projects p {
   max-width: 700px;
 }
-/* COPIED MODAL CODE START 
+/* 1i --  COPIED MODAL CODE START 
 https://codepen.io/timothylong/pen/AJxrPR
 -------------------------------------- */
 .modal-window {
@@ -320,14 +350,14 @@ https://codepen.io/timothylong/pen/AJxrPR
   color: #e9c46a;
   margin-bottom: 10px;
 }
-/* COPIED MODAL CODE END
+/* 1j -- COPIED MODAL CODE END
 -------------------------------------- */
-/* Work Experience
+/* 1k -- WORK EXPERIENCE
 -------------------------------------- */
 .work-experience {
   background-color: #2a9d8f;
 }
-/* Education
+/* 1l -- EDUCATION
 -------------------------------------- */
 .education {
   background-image: url(placeholderimages/scott-webb-hDyO6rr3kqk-unsplash.png);
@@ -338,7 +368,7 @@ https://codepen.io/timothylong/pen/AJxrPR
 .education p {
   width: 60%;
 }
-/* Contact Info
+/* 1m -- CONTACT INFO
 -------------------------------------- */
 .assignment1a footer {
   background-color: #13242a;
@@ -352,9 +382,9 @@ https://codepen.io/timothylong/pen/AJxrPR
   display: inline-block;
   padding: 15px;
 }
-/* ASSIGNMENT 1A ENDS
+/* 1n -- ASSIGNMENT 1A ENDS
 --------------------------------- */
-/* ASSIGNMENT 2B STARTS
+/* 2b -- ASSIGNMENT 2B STARTS
 --------------------------------- */
 .ass2bbackground {
   background-color: #293241;
@@ -395,7 +425,7 @@ https://codepen.io/timothylong/pen/AJxrPR
   font-size: 20px;
   max-width: 900px;
 }
-/* BUTTON index
+/* 2bc -- BUTTON INDEX
 ----------------------------------------------------------------- */
 .assignment2b .button {
   border: none;
@@ -416,7 +446,7 @@ https://codepen.io/timothylong/pen/AJxrPR
   color: #e9c46a;
   transform: scale(0.9);
 }
-/* MOVING WORD index
+/* 2bd -- MOVING WORD INDEX
 ----------------------------------------------------------------- */
 .moving-word {
   animation-name: scaleIn;
@@ -439,7 +469,7 @@ https://codepen.io/timothylong/pen/AJxrPR
     transform: scale(1);
   }
 }
-/* TYPING WORD index https://css-tricks.com/snippets/css/typewriter-effect/ - got help for the code from here
+/* 2be -- TYPING WORD INDEX https://css-tricks.com/snippets/css/typewriter-effect/ - got help for the code from here
 ----------------------------------------------------------------- */
 .typing {
   display: inline-flex;
@@ -471,7 +501,7 @@ https://codepen.io/timothylong/pen/AJxrPR
     border-color: #98c1d9;
   }
 }
-/* CLOUDS index
+/* 2bf -- CLOUDS INDEX
 ----------------------------------------------------------------- */
 .cloud1 {
   animation: float 5s linear infinite backwards;
@@ -488,9 +518,9 @@ https://codepen.io/timothylong/pen/AJxrPR
   }
 }
 
-/* ASSIGNMENT 2B ENDS
+/* 2bg --  ASSIGNMENT 2B ENDS
 --------------------------------- */
-/* ASSIGNMENT 2C STARTS
+/* 2c -- ASSIGNMENT 2C STARTS
 --------------------------------- */
 :root {
   --scale: 0.5;
@@ -519,7 +549,7 @@ h2 {
     transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
   }
 }
-/* HALLOWEEN ANIMATIONS FROM UNDRAW
+/* 2cd -- HALLOWEEN ANIMATIONS FROM UNDRAW
 ----------------------------------------------------------------- */
 /* OLD ANIMATION FOR 2ND PUMPKIN WHERE IT FLOATED TO THE LEFT AND THEN BACKDOWN TO THE RIGHT - CANT FIGURE OUT Y AXIS
 #Pumpkin_2_R {
@@ -561,7 +591,7 @@ h2 {
     transform: translateY(600px);
   }
 }
-/* GHOST animation
+/* 2ce -- GHOST ANIMATION
 ----------------------------------------------------------------- */
 .ghost {
   margin: 0%;
@@ -572,9 +602,9 @@ h2 {
 .ghost img {
   width: 90%;
 }
-/* ASSIGNMENT 2C ENDS
+/* 2cf -- ASSIGNMENT 2C ENDS
 --------------------------------- */
-/* ALL MEDIA QUERIES
+/* 33 -- ALL MEDIA QUERIES
 ------------------------------------- */
 @media screen and (min-width: 750px) {
   nav {

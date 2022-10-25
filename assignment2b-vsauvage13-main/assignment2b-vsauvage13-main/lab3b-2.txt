@@ -1,0 +1,48 @@
+@@ -0,0 +1,27 @@
+Add all of the issues you identified for your repository to a text file (with a .txt extension), which will be your backlog file.
+First order these issues from most important to least important.  Things that are clearly broken, for example, are often pressing.  Missed requirements also often make the top of the list.  The bottom of the list is often things that would be nice, but are really just icing, and possibly over-improvement.
+Now consider time available -- we'll assume less than 30 minutes.  Reorder your tasks so that at least one (but preferably a few) of those issues can be resolved within that time.  (This is using your best guess.)  Draw a line between what you expect can be resolved and the rest of the list.  Everything above that line is your first Scrum Sprint.
+Meet with your Scrum team (your lab partners) and describe what you intend to complete during the Sprint!  (This should take strictly less than five minutes for each lab partner, and one to two minutes is fine.)
+Work through your issues in order (collaborating with lab partners when it's helpful), and be sure to do the following for each individual issue:
+Create a Git branch for the issue (the name should have some relation to the issue you're addressing).
+Complete your fix or modification and commit your code using the issue description from Github as your Git commit message.  This practice allows lining up issues in the issue tracking software with resolutions in the source code.  It's an essential bit of bookkeeping that helps developers organize their work.
+If your change is large, you may have multiple commits along the way.  You'll want your final commit to match the issue description, but your intermediate commits should be otherwise.
+Switch back to the main branch and merge your issue resolution back in.
+Push your changes back to Github.
+Answer the following questions in your backlog file:
+How did your estimates line up with what you got done during your sprint?
+What debugging tools did you find yourself using to resolve your issues?
+What did you learn from this process?
+Submit your backlog file here.
+
+
+
+
+
+
+
+1. **Navigating the .css file #2**
+
+It's difficult to find exactly where .css rules for certain things are. A table of contents would be nice. c:
+
+2. **CSS #1**
+
+Have not noted down who wrote it or commented very much on what things do
+
+3. **assignment1A code consistency #1**
+
+In assignment2C.html and index.html, the navbar is nested within a 'section' element, however this element is not present in the assignment1A.html file. There is no need for this section, as it is not targeted at all in the .css file.
+
+4. **CSS Path #2**
+
+Offset path does not exist line 529
+
+5. **Naming of index and html pages #3**
+
+I found it a little confusing that the 'index.html' was the motion assignment rather than the 'portfolio' assignment as the primary page for the folder.
+
+6. **Hamburger Menu and Container #4**
+
+In this part of CSS style in all pages that applied in hamburger menu was seems no problem most especially in the webpage logo are sometimes consider also an important part of your pages most likely when you try to convince the visitor to visit your site.
+So here is my suggestion on CSS script concept. in navigation menu responsive style is to add checkbox attributes on input properties to put your logo of all pages if necessary.
+And also in container content positioning side in motion page should add padding or you apply flexbox align item to adjust content layout to the center of the page.
