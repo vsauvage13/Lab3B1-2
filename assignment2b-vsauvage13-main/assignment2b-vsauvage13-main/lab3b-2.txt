@@ -19,7 +19,7 @@ Submit your backlog file here.
 
 
 
-
+Full List - ordered by importance
 
 1. **Navigating the .css file #2**
 
@@ -37,12 +37,41 @@ Have not noted down who wrote it or commented very much on what things do
 
 Offset path does not exist line 529
 
-5. **Naming of index and html pages #3**
-
-I found it a little confusing that the 'index.html' was the motion assignment rather than the 'portfolio' assignment as the primary page for the folder.
-
-6. **Hamburger Menu and Container #4**
+5. **Hamburger Menu and Container #4**
 
 In this part of CSS style in all pages that applied in hamburger menu was seems no problem most especially in the webpage logo are sometimes consider also an important part of your pages most likely when you try to convince the visitor to visit your site.
 So here is my suggestion on CSS script concept. in navigation menu responsive style is to add checkbox attributes on input properties to put your logo of all pages if necessary.
 And also in container content positioning side in motion page should add padding or you apply flexbox align item to adjust content layout to the center of the page.
+
+6. **Naming of index and html pages #3**
+
+I found it a little confusing that the 'index.html' was the motion assignment rather than the 'portfolio' assignment as the primary page for the folder.
+
+
+
+
+List of Items I got done 
+
+1. **Navigating the .css file #2**
+
+It's difficult to find exactly where .css rules for certain things are. A table of contents would be nice. c:
+
+2. **assignment1A code consistency #1**
+
+In assignment2C.html and index.html, the navbar is nested within a 'section' element, however this element is not present in the assignment1A.html file. There is no need for this section, as it is not targeted at all in the .css file.
+
+
+
+Questions
+
+How did your estimates line up with what you got done during your sprint?
+
+I was able to complete the first two items done in the 30 minute time limit but I would have liked to fit more in the timeframe. 
+
+What debugging tools did you find yourself using to resolve your issues?
+
+I used Google Dev tools to adjust my code in the browser to test the code to make sure it rendered properly. 
+
+What did you learn from this process?
+
+It can take a lot longer to accomplish something than we hope. I have never used Google Dev tools to edit html so that was interesting to learn how to do.
