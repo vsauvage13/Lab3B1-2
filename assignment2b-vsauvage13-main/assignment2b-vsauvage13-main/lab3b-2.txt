@@ -25,13 +25,13 @@ Submit your backlog file here.
 
 It's difficult to find exactly where .css rules for certain things are. A table of contents would be nice. c:
 
-2. **CSS #1**
-
-Have not noted down who wrote it or commented very much on what things do
-
-3. **assignment1A code consistency #1**
+2. **assignment1A code consistency #1**
 
 In assignment2C.html and index.html, the navbar is nested within a 'section' element, however this element is not present in the assignment1A.html file. There is no need for this section, as it is not targeted at all in the .css file.
+
+3. **CSS #1**
+
+Have not noted down who wrote it or commented very much on what things do
 
 4. **CSS Path #2**
 
